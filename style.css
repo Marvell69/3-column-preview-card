@@ -1,0 +1,80 @@
+/* @import url(<linkrel="preconnect" href="https://fonts.googleapis.com"><linkrel="preconnect"href="https://fonts.gstatic.com"crossorigin><linkhref="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"rel="stylesheet">); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box {
+  padding: 2rem;
+}
+.box-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+}
+
+.box-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.box-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+.box h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.box p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+}
+.box a {
+  text-decoration: none;
+  background-color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  display: inline-block;
+  margin-top: 4rem;
+}
+.box a:hover {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+.box-1 a {
+  color: hsl(31, 77%, 52%);
+}
+.box-2 a {
+  margin-top: 4.4rem;
+  /* margin-bottom: 1rem; */
+  color: hsl(184, 100%, 22%);
+}
+.box-3 a {
+  color: hsl(179, 100%, 13%);
+}
+/* for the display on a mobile screen */
+@media screen and (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+    margin: 2rem 1.5rem;
+  }
+}
